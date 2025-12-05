@@ -147,4 +147,52 @@
     .text-danger { color: #dc3545; font-size: 0.875rem; margin-top: 5px; display: block; }
     .auth-title { text-align: center; margin-bottom: 30px; color: var(--primary); }
 
+    /* 8. Admin Dashboard */
+    .admin-layout { display: flex; min-height: 100vh; }
+    .sidebar {
+        width: 250px;
+        background: var(--dark);
+        color: var(--white);
+        padding: 20px;
+        flex-shrink: 0;
+    }
+    .sidebar h3 { color: var(--primary); margin-bottom: 30px; }
+    .sidebar a {
+        display: block;
+        padding: 12px 15px;
+        color: #adb5bd;
+        margin-bottom: 5px;
+        border-radius: 8px;
+    }
+    .sidebar a:hover, .sidebar a.active {
+        background: rgba(255,255,255,0.1);
+        color: var(--white);
+    }
+    .admin-content {
+        flex-grow: 1;
+        padding: 30px;
+        background: #f1f3f5;
+    }
+
+    /* 9. Data Tables */
+    .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--white);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+    .data-table th, .data-table td {
+        padding: 15px;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+    }
+    .data-table th { background: #f8f9fa; font-weight: 600; }
+    .badge {
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        background: #e9ecef;
+    }
 </style>
